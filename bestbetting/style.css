@@ -1,0 +1,343 @@
+/*
+Theme Name: Best Betting
+Theme URI: http://bestbetting.cc/
+Author: Best Betting
+Author URI: http://bestbetting.cc/
+Description: The 2014 offical theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, gray, white, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: bestbetting
+
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+html,body{
+    width: 100%;
+    /*background: url('images/bg.gif') repeat-x #fafafa;*/
+    color: #444444;
+    direction: ltr;
+    /*font: 400 12px/20px "DINPro" !important;*/
+}
+html, body, object, iframe, abbr, acronym, address, code,del, dfn, em, q, fieldset, form, label, legend,caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;	outline-style:none;outline-width:0;outline-color:-moz-use-text-color;font-weight:normal;}
+body {
+    font-family: "Arial";
+    background: #071d70;
+    margin:0px auto;
+    padding:0px;
+}
+table { border-collapse: separate; border-spacing: 0; }
+form { border: none; margin: 0px; padding: 0px; display:inline; }
+select, input, textarea {background-color: #FFFFFF; font-size:14px;}
+input, textarea { padding: 3px;}
+textarea{resize:none;}
+input:active{outline-color:-moz-use-text-color;outline-style:none;outline-width:0;}
+input:focus{outline-color:-moz-use-text-color;outline-style:none;outline-width:0;}
+textarea:active{outline-color:-moz-use-text-color;outline-style:none;outline-width:0;}
+textarea:focus{outline-color:-moz-use-text-color;outline-style:none;outline-width:0;}
+select:active{outline-color:-moz-use-text-color;outline-style:none;outline-width:0;}
+select:focus{outline-color:-moz-use-text-color;outline-style:none;outline-width:0;}
+a{text-decoration: none; color: #009966; outline: none;}
+a:link, a:active, a:visited {text-decoration: none!important;outline: none; }
+a:hover{color: #DA4A38!important;text-decoration: none!important;}
+a:hover span{color: #DA4A38 !important;}
+a img {border:0;}img {border: none;outline: none;}
+.table th, .table td {
+    padding: 5px !important;
+}
+.table-striped tbody > tr:nth-child(2n+1) > td, .table-striped tbody > tr:nth-child(2n+1) > th {
+    background-color: #D9D9D9!important;
+}
+.table-striped tbody > tr:nth-child(2n+1) > td, .table-striped tbody > tr:nth-child(2n+1) > th {
+    background-color: #D9D9D9!important;
+}
+strong, b{color: #003A78;}
+/********** end: reset **********/
+
+/* ===== Notification messages ===== */
+.nNote { cursor: pointer; margin: 0; padding: 10px; box-shadow: inset 0 0 1px #fff; -webkit-box-shadow: inset 0 0 1px #fff; -moz-box-shadow: inset 0 0 1px #fff; z-index: 1001;width: 100%;text-align: center;position: fixed}
+.nNote strong { margin-right: 5px; }
+.nNote p { margin: 0 0 5px; }
+.nMessage p { font-size: 11px; }
+.nWarning { background: #ffe9ad/* url(../images/icons/notifications/error.png) no-repeat 15px center*/; border: 1px solid #eac572; color: #826200; }
+.nSuccess { background: #effeb9/* url(../images/icons/notifications/accept.png) no-repeat 15px center*/; border: 1px solid #c1d779; color: #3C5A01; }
+.nFailure { background: #fccac1/* url(../images/icons/notifications/exclamation.png) no-repeat 15px center*/; border: 1px solid #e18b7c; color: #AC260F; }
+.nInformation { background: #deeefa/* url(../images/icons/notifications/information.png) no-repeat 15px center*/; border: 1px solid #afd3f2; color: #235685; }
+.nLightbulb { background: #FEF0CB/* url(../images/icons/notifications/lightbulb.png) no-repeat 15px center*/; border: 1px solid #D3A350; color: #835F21; }
+.nMessages { background: #9DDFFF/* url(../images/icons/notifications/email.png) no-repeat 15px center*/; border: 1px solid #42B4FF; color: #835F21; }
+
+
+#container {
+    margin:  0 auto;
+    position: relative;
+    width: 1000px;
+}
+.header{
+    height: 100px;
+    background: #1435ad;
+}
+.logo{
+    height: 70px;
+}
+.logo h2{
+    margin: 0;
+    font-size: 27px;
+    color: #fff;
+    padding: 30px 15px 15px;
+    display: inline-block;
+}
+.top-share{
+    float: left;
+}
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li {
+    float: left;
+    line-height: 28px;
+}
+.menu ul li a{
+    color: #fff;
+    padding: 1px 6px;
+    font-size: 13px;
+    font-weight: bold;
+    border-right: 1px solid #fff;
+}
+.menu ul li:hover a{
+    color: #ffd473!important;
+}
+.menu ul li:hover .sub-menu{
+    display: block;
+}
+.menu ul li:last-child a{
+    border-right: none;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #6e84d6;
+    color: #ffd473;
+    z-index: 9;
+}
+.sub-menu li {
+    display: block;
+    float: none !important;
+}
+.sub-menu li a{
+    border: none! important;
+    color: #ffd473!important;
+}
+.menu .sub-menu li:hover a{
+    color: #fff!important;
+}
+.main{
+    background: #fff;
+    padding: 13px;
+}
+.main h1{
+    margin: 0;
+    padding: 10px 0;
+    font-size: 53px;
+    color: #ffd473;
+    text-align: center;
+}
+.content {
+    position: relative;
+    overflow: hidden;
+}
+.left{
+    width: 220px;
+    float: left;
+}
+.right{
+    float: left;
+    width: 740px;
+    margin-left: 12px;
+}
+.left .box{
+    padding: 5px;
+    border: 1px solid #6e84d6;
+    margin-bottom: 10px;
+}
+.row {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    border: 1px solid #6e84d6;
+    margin-bottom: 10px;
+}
+.betinfo{
+    width: 385px;
+    float: left;
+}
+.row h3 {
+    margin: 0;
+    padding: 0 0 5px 0;
+    font-size: 19px;
+    color: #071D70;
+
+}
+.betdes{
+    color: #071d70;
+    font-size: 15px;
+}
+.betlogo{
+    float: left;
+    width: 135px;
+}
+.more-bet{
+    color: #071d70;
+    padding-bottom: 5px;
+    display: block;
+    padding-left: 10px;
+}
+.betbtn a{
+    width: 193px;
+    height: 110px;
+    float: left;
+    background: url('images/btn.png') no-repeat;
+}
+.betbtn a:hover{
+    background: url('images/btn_hover.png') no-repeat;
+}
+
+.footer{
+    margin-top: 120px;
+    height: 80px;
+    background:  #1435ad
+}
+.footer-left{
+    width: 300px;
+    float: left;
+    padding-left: 10px;
+}
+.social {
+    display: block;
+    margin-top: 10px;
+    width: 300px;
+}
+.social > img, .social > a {
+    display: inline-block;
+    padding-right: 5px;
+}
+.footer-right {
+    float: left;
+    text-align: right;
+    width: 690px;
+}
+.ftra{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.footer-right a{
+    color: #fff;
+    font-size: 11px;
+    padding: 0 5px;
+}
+.widget-title{
+    color: #071D70;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    /*padding-bottom: 10px;*/
+}
+.widget-content {
+    color: #071D70;
+    font-size: 13px;
+    line-height: 20px;
+}
+.widget-content a{
+    color: #071d70;
+}
+.single .betlogo{
+    width: 180px;
+    text-align: center;
+}
+.single .bet-type{
+    color: #071D70;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.single .betinfo {
+    width: 570px;
+}
+.single .betdes {
+    padding-right: 50px;
+}
+.single .row{
+    background: #ffd473;
+}
+.single .row h3 {
+    font-size: 18px;
+}
+.bet-content {
+    font-size: 14px;
+    line-height: 18px;
+}
+.widget-content a {
+    color: #071d70;
+    /*display: block;*/
+    /*text-align: center;*/
+}
+.widget_ratings-widget a {
+    display: block;
+}
+.widget-content img {
+    max-width: 80%;
+    /*padding-left: 10px;*/
+}
+.widget-content > ul {
+  padding-left: 20px;
+}
+.vote{
+    color: #071D70;
+    font-size:13px;
+}
+.post-ratings {
+    display: inline-block;
+    width:350px !important;
+    padding-left: 20px;
+}
+.vote1s{
+    width: 84px;
+    height: 17px;
+    background: url('images/1s.png') no-repeat;
+    display: inline-block;
+}
+.vote2s{
+    width: 84px;
+    height: 17px;
+    background: url('images/2s.png') no-repeat;
+    display: inline-block;
+}
+.vote3s{
+    width: 84px;
+    height: 17px;
+    background: url('images/3s.png') no-repeat;
+    display: inline-block;
+}
+.vote4s{
+    width: 84px;
+    height: 17px;
+    background: url('images/4s.png') no-repeat;
+    display: inline-block;
+}
+.vote5s{
+    width: 84px;
+    height: 17px;
+    background: url('images/5s.png') no-repeat;
+    display: inline-block;
+}
+.vote-home .post-ratings{
+    width: 100%!important;
+    padding: 5px 0!important;
+    font-size: 11px;
+}
+.vote-home .post-ratings em{
+    display: block;
+}
